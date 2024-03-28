@@ -1,6 +1,10 @@
-import express from "express";
-import data1 from "./singers.json" assert { type: "json" };
-const { singers } = data1;
+// import express from "express";
+const express = require("express");
+
+// import data1 from "./singers.json" assert { type: "json" };
+// const { singers } = data1;
+const { singers } = require("./singers.json");
+
 console.log(singers);
 const app = express();
 
